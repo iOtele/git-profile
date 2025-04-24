@@ -34,8 +34,8 @@ const Hero = () => {
       className="w-full min-h-screen flex flex-col justify-center  xl:pl-36 lg:pl-24 md:pl-12 sm:px-6 px-4 isolate relative z-10 "
     >
       <Navbar />
-      <div className="  absolute flex top-[120px] xl:w-[850px] lg:w-[700px]  sm:w-[700px] md:w-[900px] justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder  ">
-        <span className="flex overflow-hidden px-3 pt-24    border-gray-200 md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
+      <div className="  absolute flex top-[120px] xl:w-[850px] lg:w-[700px]  sm:w-[700px] md:w-[900px] justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder pl-5 ">
+        <span className="flex overflow-hidden px-3 pt-20   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
           {letters.map((letter, index) => (
             <span
               key={index}
@@ -70,7 +70,7 @@ const Hero = () => {
           </span>
         </h1>
         <button
-          className="xl:w-[400px] md:w-[300px] w-[300px] bg-gray-900 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-300 ease-out"
+          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-900 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-300 ease-out"
           onClick={() => setIsTextVisible(!isTextVisible)}
           onMouseEnter={() => setRoadImageOpacity(0.9)}
           onMouseLeave={() => setRoadImageOpacity(0.3)}
@@ -102,7 +102,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:gap-10 gap-2 ml-auto absolute top-40 right-3 md:right-4  md:top-40 flex-col overflow-hidden px-5 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
+      <div className="flex md:gap-10 gap-2 ml-auto absolute top-40 right-8 md:right-4  md:top-40 flex-col overflow-hidden px-4 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
         {socialIcons.map((icon, index) => (
           <a
             href="#"
