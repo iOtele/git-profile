@@ -8,20 +8,20 @@ const Project = () => {
       id="project"
       className="flex min-h-screen flex-col justify-center items-center px-4 xl:py-0 py-5"
     >
-      <h2 className="text-4xl font-light mb-10 md:mb-12 xl:mt-0 mt-12">
+      <h2 className="text-4xl font-light mb-10 md:mb-14 xl:mt-0 mt-12">
         What I Have Done...
       </h2>
       <div className="flex flex-col justify-center items-center w-full  mx-auto">
         {projectCard.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row mb-5 lg:gap-x-30 mx-auto w-full md:w-2/5 lg:w-4/6  bg-white dark:bg-gray-800 rounded-lg shadow-md shadow-red-400 dark:shadow-amber-400 p-4"
+            className="flex flex-col md:flex-row mb-5 lg:gap-x-30 mx-auto w-full md:w-2/5 lg:w-4/6  bg-white dark:bg-gray-800 rounded-lg shadow-md shadow-red-400 dark:shadow-amber-400 p-2"
           >
-            <div className="w-full md:w-50 border p-4 flex justify-center items-center">
+            <div className="w-full md:w-40  p-4 flex justify-center items-center">
               <img
                 src={project.image}
                 alt={project.title}
-                className=" h-auto object-cover w-80 rounded-lg shadow-lg "
+                className="  object-cover w-50 h-50 rounded-lg shadow-lg "
               />
             </div>
 

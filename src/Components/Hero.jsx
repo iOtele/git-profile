@@ -34,7 +34,7 @@ const Hero = () => {
       className="w-full min-h-screen flex flex-col justify-center  xl:pl-36 lg:pl-24 md:pl-12 sm:px-6 px-4 isolate relative z-10 "
     >
       <Navbar />
-      <div className="  absolute flex top-[120px] xl:w-[850px] lg:w-[700px]  sm:w-[700px] md:w-[900px] justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder pl-5 ">
+      <div className="  absolute flex top-[120px]   justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder pl-5 md:pl-0 ">
         <span className="flex overflow-hidden px-3 pt-20   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
           {letters.map((letter, index) => (
             <span
@@ -55,9 +55,9 @@ const Hero = () => {
           ))}
         </span>
       </div>
-      <div className="flex flex-col   items-center md:justify-left md:items-start  xl:gap-y-4 gap-y-3 xl:mb-0 md:mb-20 mb-0  bottom-5 ">
-        <h1 className=" flex flex-colxl:space-y-8 md:pt-10  md:space-y-4 space-y-2 xl:text-5xl md:text-4xl text-3xl  md:font-normal font-bolder md:mt-0  w-[350px] md:w-[400px] lg:w-[550px] text-center md:justify-left tracking-wider ">
-          <span className=" w-full xl:text-5xl md:text-4xl text-2xl tracking-wider xl:py-3 py-3 overflow-hidden flex sm:mx-0  mx-auto flex-col md:flex-row   ">
+      <div className="flex flex-col   items-center  md:items-start  xl:gap-y-4 gap-y-3 xl:mb-0 md:mb-20 mb-0  bottom-5 ">
+        <h1 className=" flex flex-col xl:space-y-8 md:pt-10  md:space-y-4 space-y-2 xl:text-5xl md:text-4xl text-3xl  md:font-normal font-bolder md:mt-0  w-[350px] md:w-[400px] lg:w-[550px] text-center tracking-wider ">
+          <span className=" w-full xl:text-5xl md:text-4xl text-2xl tracking-wider xl:py-3 py-3 overflow-hidden flex sm:mx-0  flex-col md:flex-row   ">
             I'm
             <span
               className={`inline-block   lg:ml-6 md:ml-4 sm:ml-2 
@@ -70,7 +70,7 @@ const Hero = () => {
           </span>
         </h1>
         <button
-          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-900 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-300 ease-out"
+          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-500 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-300 ease-out"
           onClick={() => setIsTextVisible(!isTextVisible)}
           onMouseEnter={() => setRoadImageOpacity(0.9)}
           onMouseLeave={() => setRoadImageOpacity(0.3)}
@@ -81,14 +81,14 @@ const Hero = () => {
           ></i>
         </button>
 
-        <div className="lg:w-[570px] md:w-[250px] w-[300px] absolute left-1/2 -translate-x-1/2 -z-10  bottom-10 ">
+        <div className="lg:w-[570px] md:w-[250px] w-full absolute left-1/2 -translate-x-1/2 -z-10  bottom-10 ">
           <img
             src="images/profile-pic-1.png"
             alt="Road Image"
             className="w-full md:w-[450px] mx-auto transition duration-300 ease-out"
             style={{ opacity: roadImageOpacity }}
           />
-          <span className="xl:text-[2px] md:text-[1px] text-[0.5px] font-bold tracking-wide  absolute -top-5 xl:right-54 lg:right-52  right-5 rotate-[3.5deg] animate-bounce">
+          <span className=" hidden md:block xl:text-[10px] md:text-[8px] text-[5px] font-bold tracking-wide  absolute top-0  xl:right-54 lg:right-52 right-5 rotate-[6.5deg] animate-bounce">
             Ready for exciting challenges.
           </span>
           <div
