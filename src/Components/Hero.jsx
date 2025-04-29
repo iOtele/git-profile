@@ -13,7 +13,7 @@ const Hero = () => {
   const [currentText, setCurrentText] = useState(professionTexts[0]);
   const [isRotating, setIsRotating] = useState(false);
   const [isTextVisible, setIsTextVisible] = useState(false);
-  const [roadImageOpacity, setRoadImageOpacity] = useState(0.3);
+  const [profileOpacity, setProfileOpacity] = useState(0.3);
   let currentTextIndex = 0;
 
   useEffect(() => {
@@ -31,11 +31,11 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="w-full min-h-screen flex flex-col justify-center  xl:pl-36 lg:pl-24 md:pl-12 sm:px-6 px-4 isolate relative z-10 "
+      className="w-full min-h-screen flex flex-col px-4 xl:py-0 py-5 justify-center  xl:pl-36 lg:pl-24 md:pl-12 sm:px-6 isolate relative z-10 "
     >
       <Navbar />
-      <div className="  absolute flex top-[120px]   justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder pl-5 md:pl-0 ">
-        <span className="flex overflow-hidden px-3 pt-20   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
+      <div className="  absolute flex top-[120px]   justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder md:pl-0 ">
+        <span className="flex overflow-hidden pl-2 pt-16   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
           {letters.map((letter, index) => (
             <span
               key={index}
@@ -72,8 +72,8 @@ const Hero = () => {
         <button
           className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-500 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-300 ease-out"
           onClick={() => setIsTextVisible(!isTextVisible)}
-          onMouseEnter={() => setRoadImageOpacity(0.9)}
-          onMouseLeave={() => setRoadImageOpacity(0.3)}
+          onMouseEnter={() => setProfileOpacity(0.9)}
+          onMouseLeave={() => setProfileOpacity(0.3)}
         >
           {isTextVisible ? "Hide My Story" : "Read My Story"}{" "}
           <i
@@ -81,12 +81,12 @@ const Hero = () => {
           ></i>
         </button>
 
-        <div className="lg:w-[570px] md:w-[250px] w-full absolute left-1/2 -translate-x-1/2 -z-10  bottom-10 ">
+        <div className="lg:w-[570px] md:w-[250px] w-full absolute left-1/2 -translate-x-1/2 -z-10  bottom-15 md:bottom-10 ">
           <img
             src="images/profile-pic-1.png"
             alt="Road Image"
-            className="w-full md:w-[450px] mx-auto transition duration-300 ease-out"
-            style={{ opacity: roadImageOpacity }}
+            className="w-full md:w-[500px] mx-auto transition duration-300 ease-out"
+            style={{ opacity: profileOpacity }}
           />
           <span className=" hidden md:block xl:text-[10px] md:text-[8px] text-[5px] font-bold tracking-wide  absolute top-0  xl:right-54 lg:right-52 right-5 rotate-[6.5deg] animate-bounce">
             Ready for exciting challenges.
@@ -102,7 +102,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:gap-10 gap-2 ml-auto absolute top-40 right-8 md:right-4  md:top-40 flex-col overflow-hidden px-4 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
+      <div className="flex md:gap-10 gap-2 ml-auto absolute top-40 right-5 md:right-4  md:top-40 flex-col overflow-hidden px-4 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
         {socialIcons.map((icon, index) => (
           <a
             href="#"

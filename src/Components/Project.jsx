@@ -11,25 +11,25 @@ const Project = () => {
       <h2 className="text-4xl font-light mb-10 md:mb-14 xl:mt-0 mt-12">
         What I Have Done...
       </h2>
-      <div className="flex flex-col justify-center items-center w-full  mx-auto">
+      <div className="w-full xl:w-[900px] lg:w-[750px] md:w-[500px] grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-32 xl:mb-0 ">
         {projectCard.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row mb-5 lg:gap-x-30 mx-auto w-full md:w-2/5 lg:w-4/6  bg-white dark:bg-gray-800 rounded-lg shadow-md shadow-red-400 dark:shadow-amber-400 p-2"
+            className="lg:max-w-[250px] md:max-w-[500px] max-w-[330px] w-full mx-auto rounded-sm ring-2 ring-gray-400/20 shadow-md shadow-gray-700/20 relative isolate"
           >
-            <div className="w-full md:w-40  p-4 flex justify-center items-center">
+            <div className="  p-4 flex justify-center items-center ">
               <img
                 src={project.image}
                 alt={project.title}
-                className="  object-cover w-50 h-50 rounded-lg shadow-lg "
+                className="  w-l object-cover  rounded-lg shadow-lg "
               />
             </div>
 
-            <div className="w-full md:w-1/2 p-4 ">
+            <div className="w-full p-4 justify-center items-center flex flex-col gap-2">
               <h3 className="text-2xl font-semibold mb-2 text-red-500 dark:text-yellow-500">
                 {project.title}
               </h3>
-              <p className="text-gray-900 dark:text-white">
+              <p className="text-gray-900 dark:text-white md:h-28 h-24 d:text-base text-sm font-light overflow-y-auto custom-scrollbar pr-2 transition-colors duration-500">
                 {project.description}
               </p>
             </div>

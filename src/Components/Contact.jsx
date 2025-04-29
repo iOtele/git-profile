@@ -4,10 +4,15 @@ import NavigationCircle from "./NavigationCircle";
 const Contact = () => {
   return (
     <>
-      <div id="contact" className="h-[90vh] flex flex-col pt-10  items-center ">
+      <div id="contact" className="min-h-[90vh] flex flex-col items-center">
         <h2 className="text-4xl font-light md:mb-32 mb-24">Connect with ME</h2>
-        <div className="flex flex-col lg:flex-row md:gap-x-40 gap-x-8 lg:gap-y-0 gap-y-8 lg:mb-0 mb-20 ">
-          <div className="flex flex-col flex-1">
+        <div
+          className="flex flex-col lg:flex-row sm:gap-x-15 md:gap-x-40 gap-x-5 gap-y-8 lg:mb-0 px-5 w-full sm:w-auto        
+        
+        
+        "
+        >
+          <div className="flex flex-col  ">
             <h1 className="text-3xl md:text-4xl font-bold py-2">Hire Me...</h1>
             <p className="text-lg md:text-xl py-3.5 font-semibold text-wrap ">
               I'm currently available to take on new projects, so if{" "}
@@ -29,8 +34,8 @@ const Contact = () => {
               <p>Lagos, Nigeria</p>
             </div>
           </div>
-          <div className="flex flex-col flex-1">
-            <form className="flex flex-col lg:space-y-12 space-y-8">
+          <div className="flex flex-col   ">
+            <form className="flex flex-col  lg:space-y-12 space-y-8">
               <input
                 type="email"
                 placeholder="Email"
@@ -47,12 +52,12 @@ const Contact = () => {
                 className="md:w-[400px] w-full h-13 pl-3 text-lg outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500 "
               />
             </form>
+            <NavigationCircle section="contact" />
           </div>
         </div>
-        <NavigationCircle section="contact" />
       </div>
-      <div className=" flex justify-center ">
-        <p className=" pt-3 dark:text-gray-200 tracking-widest  text-gray-900  ">
+      <div className="flex flex-col items-center pt-0 ">
+        <p className="  dark:text-gray-200 tracking-widest  text-gray-900  ">
           &copy;2025 iotele.com{" "}
         </p>
       </div>
