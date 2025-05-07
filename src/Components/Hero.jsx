@@ -7,6 +7,7 @@ import {
   socialIcons,
 } from "../assets/data";
 import NavigationCircle from "./NavigationCircle";
+import { href } from "react-router-dom";
 
 const Hero = () => {
   const [hoveredLetter, setHoveredLetter] = useState(null);
@@ -34,8 +35,8 @@ const Hero = () => {
       className="w-full min-h-screen flex flex-col px-4 xl:py-0 py-5 justify-center  xl:pl-36 lg:pl-24 md:pl-12 sm:px-6 isolate relative z-10 "
     >
       <Navbar />
-      <div className="  absolute flex top-[120px]   justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder md:pl-0 ">
-        <span className="flex overflow-hidden pl-2 pt-16   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
+      <div className="  absolute flex top-[70px]  justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder md:pl-0 ">
+        <span className="flex overflow-hidden pl-2 pt-18   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
           {letters.map((letter, index) => (
             <span
               key={index}
@@ -70,7 +71,7 @@ const Hero = () => {
           </span>
         </h1>
         <button
-          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-500 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center md:mr-auto md:mx-0 mx-auto transition-colors duration-300 ease-out"
+          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-500 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center  md:mx-0 mx-auto transition-colors duration-300 ease-out"
           onClick={() => setIsTextVisible(!isTextVisible)}
           onMouseEnter={() => setProfileOpacity(0.9)}
           onMouseLeave={() => setProfileOpacity(0.3)}
@@ -102,10 +103,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:gap-10 gap-2 ml-auto absolute top-40 right-5 md:right-4  md:top-40 flex-col overflow-hidden px-4 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
+      <div className="flex md:gap-5 gap-2 ml-auto absolute top-[70px] right-5 md:right-4  flex-col overflow-hidden px-2 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
         {socialIcons.map((icon, index) => (
           <a
-            href="#"
+            href={icon.href} target="_blank"
             key={index}
             className="xl:text-3xl md:text-2xl text-xl dark:hover:text-white hover:text-gray-900 dark:hover:shadow-amber-200 hover:shadow-red-500 shadow transition-all duration-500 ease-in-out "
           >

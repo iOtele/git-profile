@@ -13,10 +13,10 @@ export const letters = [
 export const professionTexts = ["a Front End Developer", "a Web Developer "];
 
 export const socialIcons = [
-  { icon: "bx bxl-github" },
-  { icon: "bx bxl-linkedin" },
-  { icon: "bx bxl-instagram-alt" },
-  { icon: "bx bxl-twitter" },
+  { icon: "bx bxl-github", href: `https://www.github.com` },
+  { icon: "bx bxl-linkedin", href: `https://www.linkedin.com` },
+  { icon: "bx bxl-instagram-alt", href: `https://www.instagram.com` },
+  { icon: "bx bxl-twitter", href: `https://www.x.com` },
 ];
 
 export const aboutText = `I’m Olalekan Otele, a dedicated Front-End Developer with a deep passion for building modern, high-performance, and business-focused web applications. Transitioning from a strong background in IT Support and infrastructure management, I bring a unique problem-solving mindset to web development — combining technical precision with a commitment to creating seamless digital experiences that blend functionality, efficiency, and aesthetics.
@@ -57,28 +57,29 @@ export const skillCards = [
     },
   },
   {
-    icon: "bx bx-camera",
-    title: "Photography",
-    description:
-      "Photography is an essential part of digital content creation, capturing high-quality visuals that enhance branding and storytelling. I have experience in portrait, landscape, and product photography, ensuring every image is edited and optimized for the web. Understanding lighting, composition, and post-processing allows me to create compelling images that elevate visual communication across various platforms.",
-    projectCount: 4,
-    hoverPosition: {
-      large: "bottom",
-      small: "bottom",
-    },
-  },
- 
-  {
     icon: "bx bxs-devices",
     title: "RWD",
     description:
       "In today's digital world, ensuring a seamless user experience across all devices is crucial. I implement responsive design techniques using modern CSS frameworks like Tailwind CSS and Bootstrap. By employing fluid grids, flexible layouts, and media queries, I create web pages that look great and function perfectly on desktops, tablets, and smartphones.",
     projectCount: 3,
     hoverPosition: {
+      large: "bottom",
+      small: "bottom",
+    },
+  },
+  {
+    icon: "bx bx-camera",
+    title: "Photography",
+    description:
+      "Photography is an essential part of digital content creation, capturing high-quality visuals that enhance branding and storytelling. I have experience in portrait, landscape, and product photography, ensuring every image is edited and optimized for the web. Understanding lighting, composition, and post-processing allows me to create compelling images that elevate visual communication across various platforms.",
+    projectCount: 4,
+    hoverPosition: {
       large: "top",
       small: "bottom",
     },
   },
+
+  ,
   {
     icon: "bx bx-data",
     title: "Back-End Dev",

@@ -8,9 +8,8 @@ const Loader = ({ isLoading }) => {
       }`}
     >
       {" "}
-      <h2 className="w-full sm:w-[700px] md:w-[900px] dark:text-gray-200 flex justify-center  tracking-wide  text-gray-900 font-medium text-2xl md:text-3xl lg:text-4xl mb-5">
-        Otele Olalekan Abiodun <br />
-        Front-End Developer
+      <h2 className="w-full sm:w-[300px] md:w-[900px] dark:text-gray-200 flex justify-center  tracking-wide  text-gray-900 font-medium text-2xl md:text-3xl lg:text-4xl mb-5">
+        Otele Olalekan Abiodun (Front-End Developer)
       </h2>
       <img src="images/loading-gif-1.gif" alt="loader" className="w-80" />
     </div>
