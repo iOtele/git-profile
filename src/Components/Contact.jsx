@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex min-h-screen flex-col justify-around items-center px-4 xl:py-0 py-5 "
+      className="flex md:min-h-screen min-h-[90vh] flex-col justify-around items-center px-4 xl:py-0 py-5 "
     >
       <h2 className="text-4xl font-light mb-24 xl:mt-10  mt-12 ">
         Connect with ME

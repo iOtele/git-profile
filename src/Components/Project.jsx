@@ -17,13 +17,13 @@ const Project = () => {
             key={index}
             className="lg:max-w-[250px] md:max-w-[500px] max-w-[330px] w-full mx-auto rounded-sm ring-2 ring-gray-400/20 shadow-md shadow-gray-700/20 relative isolate p-4 flex flex-col justify-center items-center bg-white dark:bg-gray-800 transition-colors duration-500 hover:shadow-lg hover:shadow-gray-700/20"
           >
-            <div className="flex justify-center items-center border w-50  rounded-lg overflow-hidden mb-4 cursor-pointer">
+            {/* <div className="flex justify-center items-center  w-40 md:w-50  rounded-lg overflow-hidden mb-4 cursor-pointer"> */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="object-cover rounded-lg shadow-lg "
+                className="object-cover w-40 rounded-lg shadow-lg mb-4 cursor-pointer"
               />
-            </div>
+            {/* </div> */}
 
             <div className="w-full justify-center items-center flex flex-col gap-2">
               <h3 className="text-2xl font-semibold mb-2 text-red-500 dark:text-yellow-500">
