@@ -71,7 +71,7 @@ const Contact = () => {
               type="email"
               placeholder="Email"
               name="email"
-              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border-red-500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 transition-colors duration-500" required
+              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border--500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 transition-colors duration-500" required
             />
             <textarea
               placeholder="Message"

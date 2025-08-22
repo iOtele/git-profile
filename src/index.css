@@ -30,6 +30,7 @@
 
 @theme {
   --animate-bounce: bounce 2s infinite;
+  
 
   @keyframes bounce {
     0%,

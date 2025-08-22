@@ -10,11 +10,18 @@ export const letters = [
   { char: "o", img: "images/person-img-5.jpg", rotate: "-rotate-15" },
 ];
 
-export const professionTexts = ["a Front End Developer", "a Web Developer "];
+export const professionTexts = [
+  "a Front-End Developer",
+  "a Web Developer ",
+  "a Project Manager",
+];
 
 export const socialIcons = [
   { icon: "bx bxl-github", href: `https://www.github.com` },
-  { icon: "bx bxl-linkedin", href: `https://www.linkedin.com` },
+  {
+    icon: "bx bxl-linkedin",
+    href: `https://www.linkedin.com/in/otele-olalekan/`,
+  },
   { icon: "bx bxl-instagram-alt", href: `https://www.instagram.com` },
   { icon: "bx bxl-twitter", href: `https://www.x.com` },
 ];
