@@ -1,33 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import NavigationCircle from "./NavigationCircle";
 import Swal from "sweetalert2";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const onSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "c5fd7ea9-9629-40b4-a7aa-22198373884c");
-
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    }).then((res) => res.json());
-
-    if (res.success) {
+    setLoading(true);
+    try {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "c5fd7ea9-9629-40b4-a7aa-22198373884c");
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+      if (res.success) {
+        Swal.fire({
+          title: "Success!",
+          text: "Message Sent Successfully!",
+          icon: "success",
+        });
+        event.target.reset();
+      } else {
+        Swal.fire({
+          title: "Error!",
+          text: res.message || "Something went wrong.",
+          icon: "error",
+        });
+      }
+    } catch (error) {
       Swal.fire({
-        title: "Success!",
-        text: "Message Sent Successfully!",
-        icon: "success",
+        title: "Error!",
+        text: error.message || "Something went wrong.",
+        icon: "error",
       });
-      event.target.reset();
+    } finally {
+      setLoading(false);
     }
   };
   return (
@@ -71,20 +85,28 @@ const Contact = () => {
               type="email"
               placeholder="Email"
               name="email"
-              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border--500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 transition-colors duration-500" required
+              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border--500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 transition-colors duration-500"
+              required
             />
             <textarea
               placeholder="Message"
               name="message"
               className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border-red-500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 min-h-[100px] max-h-[200px] resize-y p-3 transition-colors duration-500"
-              id="" required
+              id=""
+              required
             />
-            <input
+            {/* <input
               type="Submit"
               value="Stay Connected"
               name="submit"
               className="md:w-[400px] w-full h-13 pl-3 text-lg outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500 "
-            />
+            /> */}
+            <button
+              type="submit"
+              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
+            >
+              {loading ? "Sending..." : "Stay Connected"}
+            </button>
           </form>
           <NavigationCircle section="contact" />
         </div>

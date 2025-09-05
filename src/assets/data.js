@@ -1,6 +1,6 @@
-import images_1 from "/images/person-img-1.jpg";
-import images_2 from "/images/person-img-2.jpg";
-import images_3 from "/images/person-img-3.jpg";
+import mortin from "/images/mortin.png";
+import gym from "/images/gym.png";
+import yoni from "/images/yoni.png";
 
 export const letters = [
   { char: "H", img: "images/person-img-1.jpg", rotate: "-rotate-15" },
@@ -26,19 +26,15 @@ export const socialIcons = [
   { icon: "bx bxl-twitter", href: `https://www.x.com` },
 ];
 
-export const aboutText = `I’m Olalekan Otele, a dedicated Front-End Developer with a deep passion for building modern, high-performance, and business-focused web applications. Transitioning from a strong background in IT Support and infrastructure management, I bring a unique problem-solving mindset to web development — combining technical precision with a commitment to creating seamless digital experiences that blend functionality, efficiency, and aesthetics.
+export const aboutText = `I’m Olalekan Otele, a Front-End Developer who loves turning ideas into sleek, high-performance web apps. With a background in IT Support, I bring a problem-solving mindset to every project, blending technical precision with creativity to build seamless, user-friendly experiences.
 
-With a solid foundation in HTML, CSS, JavaScript, React, Tailwind CSS, and Next.js, along with growing knowledge of MongoDB, I specialize in developing responsive, interactive, and scalable applications tailored to meet diverse client and business needs. I have a particular interest in UI/UX-driven applications, landing pages, and business websites, ensuring every product I build is intuitive, user-friendly, and visually engaging.
+I work with HTML, CSS, JavaScript, React, Tailwind CSS, and Next.js, and I’m diving into MongoDB to make apps even more dynamic. I focus on UI/UX-driven applications, landing pages, and business websites that are responsive, intuitive, and visually engaging.
 
-My approach to development is meticulous — from conceptualizing innovative ideas to implementing robust solutions that deliver real value. I prioritize performance optimization, cross-device compatibility, and smooth navigation, ensuring a flawless user experience on every screen size.
+I treat development like a mix of engineer and detective: optimizing performance, ensuring cross-device compatibility, and making every interaction smooth. My IT experience also helps me troubleshoot fast, manage workflows, and collaborate effectively.
 
-While I currently focus on front-end technologies, my IT support experience has shaped my ability to quickly troubleshoot issues, manage infrastructure efficiently, and collaborate across multidisciplinary teams, skills I seamlessly integrate into my development workflow today.
+Beyond coding, I’m a lifelong learner, exploring emerging tech, contributing to open-source projects, and mentoring aspiring developers. I also volunteer with the Lagos Food Bank Initiative and my church media team, sharpening leadership and teamwork skills along the way.
 
-Beyond coding, I’m an active tech enthusiast, always eager to explore emerging technologies, contribute to open-source projects, and stay ahead of industry trends. My commitment to continuous learning drives me to refine my skills with every project, pushing boundaries to deliver meaningful digital experiences that leave a lasting impact.
-
-I also value community and leadership. I proudly volunteer with the Lagos Food Bank Initiative and my church media team, roles that have honed my leadership, communication, and teamwork abilities. Additionally, I mentor aspiring developers, sharing knowledge and offering guidance to help others thrive in the tech space.
-
-For me, web development isn’t just about writing code — it’s about solving problems, building practical solutions for businesses, and creating impactful digital experiences that stand out in today’s evolving digital landscape.`;
+For me, web development isn’t just code — it’s solving real problems, building meaningful solutions, and creating digital experiences that leave a mark… with a little fun sprinkled in.`;
 
 export const skillCards = [
   {
@@ -52,17 +48,7 @@ export const skillCards = [
       small: "bottom",
     },
   },
-  {
-    icon: "bx bx-pen",
-    title: "Design",
-    description:
-      "Design is all about creating visually appealing and user-friendly interfaces. I specialize in UI/UX design, ensuring every project balances aesthetics with functionality. Using tools like Figma and Adobe XD, I craft intuitive layouts that enhance user experience. From wire frames to high-fidelity prototypes, I focus on clean, minimal, and modern designs tailored for web and mobile applications.",
-    projectCount: 3,
-    hoverPosition: {
-      large: "bottom",
-      small: "bottom",
-    },
-  },
+
   {
     icon: "bx bxs-devices",
     title: "RWD",
@@ -75,11 +61,22 @@ export const skillCards = [
     },
   },
   {
-    icon: "bx bx-camera",
-    title: "Photography",
+    icon: "bx bxl-github",
+    title: "Git Version Control",
     description:
-      "Photography is an essential part of digital content creation, capturing high-quality visuals that enhance branding and storytelling. I have experience in portrait, landscape, and product photography, ensuring every image is edited and optimized for the web. Understanding lighting, composition, and post-processing allows me to create compelling images that elevate visual communication across various platforms.",
-    projectCount: 4,
+      "Version control is essential for modern web development, and Git is my go-to tool for managing code efficiently. I use GitHub for collaboration, handling pull requests, merging branches, and tracking project changes. Whether working solo or in a team, I ensure code is well-documented, structured, and easily maintainable through proper versioning practices. ",
+    projectCount: 3,
+    hoverPosition: {
+      large: "bottom",
+      small: "bottom",
+    },
+  },
+  {
+    icon: "bx bx-video",
+    title: "Videography",
+    description:
+      "I create engaging video content that brings stories to life. From filming to editing, I focus on strong visuals, sound, and pacing to produce compelling videos that capture attention and enhance brand storytelling. Whether it's promotional videos, tutorials, or social media content, I ensure each project is polished and professional.",
+    projectCount: 2,
     hoverPosition: {
       large: "top",
       small: "bottom",
@@ -89,9 +86,9 @@ export const skillCards = [
   ,
   {
     icon: "bx bx-data",
-    title: "Back-End Dev",
+    title: "Project Management",
     description:
-      "Back-end development drives the core functionality behind web applications. I'm currently developing my skills working with Node.js and databases like MongoDB and PostgreSQL to build reliable, secure, and scalable server-side applications. From handling user authentication and managing API requests to optimizing database queries, I focus on ensuring data is processed efficiently and securely to support smooth, seamless interactions on the front end",
+      "I manage projects by aligning tasks, timelines, and teams to deliver results efficiently. With a focus on clear communication, organization, and problem-solving, I help ideas move smoothly from planning to execution. I use tools like Trello and Asana to keep everything on track, ensuring deadlines are met and goals are achieved.",
     projectCount: 3,
     hoverPosition: {
       large: "top",
@@ -99,10 +96,10 @@ export const skillCards = [
     },
   },
   {
-    icon: "bx bxl-github",
-    title: "Git Version Control",
+    icon: "bx bx-film",
+    title: "Video Editing ",
     description:
-      "Version control is essential for modern web development, and Git is my go-to tool for managing code efficiently. I use GitHub for collaboration, handling pull requests, merging branches, and tracking project changes. Whether working solo or in a team, I ensure code is well-documented, structured, and easily maintainable through proper versioning practices.",
+      "I edit videos that tell stories with clarity and creativity. Using Canva and CapCut, I craft clean cuts, smooth transitions, and engaging visuals tailored for social media and digital platforms. ",
     projectCount: 3,
     hoverPosition: {
       large: "top",
@@ -113,24 +110,24 @@ export const skillCards = [
 
 export const projectCard = [
   {
-    image: images_1,
-    title: "Project Title here",
+    image: mortin,
+    title: "Morgage Company ",
     description:
-      "Version control is essential for modern web development, and Git is my go-to tool for managing code efficiently. I use GitHub for collaboration, handling pull requests, merging branches, and ",
-    terminologies: ["HMTL", "CSS", "Javascript"],
+      "A mortgage loan website built with React and Tailwind CSS, using useContext for state management and API integration for loan applications, document uploads, and user data.",
+    terminologies: ["React", "Tailwind css", "Github", "API"],
   },
   {
-    image: images_2,
-    title: "Project Title here",
+    image: gym,
+    title: "Fitness Gym Website",
     description:
-      "Version control is essential for modern web development, and Git is my go-to tool for managing code efficiently. I use GitHub for collaboration, handling pull requests, merging branches, and ",
-    terminologies: ["HMTL", "CSS", "Javascript"],
+      "A fitness booking website built with React, CSS, and contact forms, featuring a responsive design for class scheduling, user interaction, and seamless bookings. ",
+    terminologies: ["React", "CSS", "Github", "EmailJS"],
   },
   {
-    image: images_3,
-    title: "Project Title here",
+    image: yoni,
+    title: "Hotel Booking Website",
     description:
-      "Version control is essential for modern web development, and Git is my go-to tool for managing code efficiently. I use GitHub for collaboration, handling pull requests, merging branches, and ",
-    terminologies: ["HMTL", "CSS", "Javascript"],
+      "A hotel booking website built with HTML, CSS, JavaScript, and Bootstrap, featuring a responsive interface with interactive booking forms and dynamic user experience ",
+    terminologies: ["HMTL", "CSS", "Javascript", "Bootstrap"],
   },
 ];

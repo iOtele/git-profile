@@ -71,7 +71,7 @@ const Hero = () => {
           </span>
         </h1>
         <button
-          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-500 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center  md:mx-0 mx-auto transition-colors duration-300 ease-out"
+          className="xl:w-[400px] md:w-[300px] min-w-[200px] bg-gray-500 dark:bg-gray-500 md:py-1 py-0 md:px-2 xl:text-xl md:text-lg text-base dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between text-white items-center  md:mx-0 mx-auto transition-colors duration-300 ease-out cursor-pointer"
           onClick={() => setIsTextVisible(!isTextVisible)}
           onMouseEnter={() => setProfileOpacity(0.9)}
           onMouseLeave={() => setProfileOpacity(0.3)}
@@ -106,7 +106,8 @@ const Hero = () => {
       <div className="flex md:gap-5 gap-2 ml-auto absolute top-[70px] right-5 md:right-4  flex-col overflow-hidden px-2 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
         {socialIcons.map((icon, index) => (
           <a
-            href={icon.href} target="_blank"
+            href={icon.href}
+            target="_blank"
             key={index}
             className="xl:text-3xl md:text-2xl text-xl dark:hover:text-white hover:text-gray-900 dark:hover:shadow-amber-200 hover:shadow-red-500 shadow transition-all duration-500 ease-in-out "
           >
