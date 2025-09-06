@@ -131,3 +131,87 @@ export const projectCard = [
     terminologies: ["HMTL", "CSS", "Javascript", "Bootstrap"],
   },
 ];
+export const projectViewCard = [
+  {
+    image: mortin,
+    title: "Morgage Company ",
+    description:
+      "A mortgage loan website built with React and Tailwind CSS, using useContext for state management and API integration for loan applications, document uploads, and user data.",
+    terminologies: ["React", "Tailwind css", "Github", "API"],
+  },
+  {
+    image: gym,
+    title: "Fitness Gym Website",
+    description:
+      "A fitness booking website built with React, CSS, and contact forms, featuring a responsive design for class scheduling, user interaction, and seamless bookings. ",
+    terminologies: ["React", "CSS", "Github", "EmailJS"],
+  },
+  {
+    image: yoni,
+    title: "Hotel Booking Website",
+    description:
+      "A hotel booking website built with HTML, CSS, JavaScript, and Bootstrap, featuring a responsive interface with interactive booking forms and dynamic user experience ",
+    terminologies: ["HMTL", "CSS", "Javascript", "Bootstrap"],
+  },
+  {
+    image: mortin,
+    title: "Morgage Company ",
+    description:
+      "A mortgage loan website built with React and Tailwind CSS, using useContext for state management and API integration for loan applications, document uploads, and user data.",
+    terminologies: ["React", "Tailwind css", "Github", "API"],
+  },
+  {
+    image: gym,
+    title: "Fitness Gym Website",
+    description:
+      "A fitness booking website built with React, CSS, and contact forms, featuring a responsive design for class scheduling, user interaction, and seamless bookings. ",
+    terminologies: ["React", "CSS", "Github", "EmailJS"],
+  },
+  {
+    image: yoni,
+    title: "Hotel Booking Website",
+    description:
+      "A hotel booking website built with HTML, CSS, JavaScript, and Bootstrap, featuring a responsive interface with interactive booking forms and dynamic user experience ",
+    terminologies: ["HMTL", "CSS", "Javascript", "Bootstrap"],
+  },{
+    image: mortin,
+    title: "Morgage Company ",
+    description:
+      "A mortgage loan website built with React and Tailwind CSS, using useContext for state management and API integration for loan applications, document uploads, and user data.",
+    terminologies: ["React", "Tailwind css", "Github", "API"],
+  },
+  {
+    image: gym,
+    title: "Fitness Gym Website",
+    description:
+      "A fitness booking website built with React, CSS, and contact forms, featuring a responsive design for class scheduling, user interaction, and seamless bookings. ",
+    terminologies: ["React", "CSS", "Github", "EmailJS"],
+  },
+  {
+    image: yoni,
+    title: "Hotel Booking Website",
+    description:
+      "A hotel booking website built with HTML, CSS, JavaScript, and Bootstrap, featuring a responsive interface with interactive booking forms and dynamic user experience ",
+    terminologies: ["HMTL", "CSS", "Javascript", "Bootstrap"],
+  },{
+    image: mortin,
+    title: "Morgage Company ",
+    description:
+      "A mortgage loan website built with React and Tailwind CSS, using useContext for state management and API integration for loan applications, document uploads, and user data.",
+    terminologies: ["React", "Tailwind css", "Github", "API"],
+  },
+  {
+    image: gym,
+    title: "Fitness Gym Website",
+    description:
+      "A fitness booking website built with React, CSS, and contact forms, featuring a responsive design for class scheduling, user interaction, and seamless bookings. ",
+    terminologies: ["React", "CSS", "Github", "EmailJS"],
+  },
+  {
+    image: yoni,
+    title: "Hotel Booking Website",
+    description:
+      "A hotel booking website built with HTML, CSS, JavaScript, and Bootstrap, featuring a responsive interface with interactive booking forms and dynamic user experience ",
+    terminologies: ["HMTL", "CSS", "Javascript", "Bootstrap"],
+  },
+];

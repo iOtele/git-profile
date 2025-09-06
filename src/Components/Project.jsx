@@ -1,6 +1,7 @@
 import React from "react";
 import { projectCard } from "../assets/data";
 import NavigationCircle from "./NavigationCircle";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
@@ -11,7 +12,7 @@ const Project = () => {
       <h2 className="text-4xl font-light mb-32 xl:mt-0 mt-12">
         What I Have Done...
       </h2>
-      <div className="w-full xl:w-[900px] lg:w-[750px] md:w-[500px] grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-16 xl:mb-0 place-content-center">
+      <div className="w-full xl:w-[900px] lg:w-[750px] md:w-[500px] grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-16 xl:mb-0 ">
         {projectCard.map((project, index) => (
           <div
             key={index}
@@ -20,7 +21,7 @@ const Project = () => {
             <img
               src={project.image}
               alt={project.title}
-              className="object-cover rounded-lg shadow-lg mb-4 cursor-pointer"
+              className="object-cover w-80 rounded-lg shadow-lg mb-4 cursor-pointer"
             />
 
             <div className="w-full justify-center items-center flex flex-col gap-2">
@@ -40,13 +41,14 @@ const Project = () => {
           </div>
         ))}
       </div>
-
-      <button
-        type="text"
-        className=" md:w-[200px] w-full h-13 pl-3 text-lg mt-10 outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
-      >
-        See More...
-      </button>
+      <Link to={"/projects"}>
+        <button
+          type="button"
+          className=" md:w-[200px] w-full h-13 pl-3 text-lg mt-10 outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
+        >
+          See More...
+        </button>
+      </Link>
 
       <NavigationCircle section="project" />
     </div>

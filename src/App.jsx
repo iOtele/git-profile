@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
-import Hero from "./Components/Hero";
 import { ThemeProvider } from "./Context/ThemeContext";
-
-import Services from "./Components/Services";
-import Contact from "./Components/Contact";
 import Loader from "./Components/Loader";
-import Project from "./Components/Project";
+import MainPage from "./Pages/MainPage";
+import ProjectsView from "./Components/ProjectsView";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 const App = () => {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -17,19 +15,19 @@ const App = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
+    <BrowserRouter>
       <ThemeProvider>
         <div className="min-h-screen bg-white dark:bg-gray-800 text-red-500 dark:text-yellow-500 transition-colors duration-700">
           <Loader isLoading={isLoading} />
           {!isLoading && (
-            <>
-              <Hero />
-              <Services />
-              <Project />
-              <Contact />
-            </>
+            <Routes>
+              <Route path="*" element={<MainPage />} />
+              <Route path="/projects" element={<ProjectsView />} />
+            </Routes>
           )}
         </div>
       </ThemeProvider>
+    </BrowserRouter>
   );
 };
 
