@@ -25,7 +25,7 @@ const Project = () => {
             />
 
             <div className="w-full justify-center items-center flex flex-col gap-2">
-              <h3 className="text-2xl font-semibold mb-2 text-red-500 dark:text-yellow-500">
+              <h3 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-yellow-500">
                 {project.title}
               </h3>
               <p className="text-gray-900 dark:text-white md:h-28 h-24 text-sm font-light overflow-y-auto custom-scrollbar pr-2 transition-colors duration-500">
@@ -44,7 +44,7 @@ const Project = () => {
       <Link to={"/projects"}>
         <button
           type="button"
-          className=" md:w-[200px] w-full h-13 pl-3 text-lg mt-10 outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
+          className=" md:w-[200px] w-full h-13 pl-3 text-lg mt-10 outline-0 bg-gray-900 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
         >
           See More...
         </button>

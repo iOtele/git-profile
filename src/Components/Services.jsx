@@ -47,7 +47,7 @@ const Services = () => {
               <i
                 className={`${card.icon} md:text-4xl text-3xl text-gray-900 dark:text-white transition-colors duration-500`}
               ></i>
-              <h3 className="md:text-2xl text-xl font-bold my-4 text-red-500 dark:text-yellow-500 transition-colors duration-500">
+              <h3 className="md:text-2xl text-xl font-bold my-4 text-gray-900 dark:text-yellow-500 transition-colors duration-500">
                 {card.title}
               </h3>
               <p className="text-gray-900 dark:text-white md:h-28 h-24 d:text-base text-sm font-light overflow-y-auto custom-scrollbar pr-2 transition-colors duration-500">
@@ -66,7 +66,7 @@ const Services = () => {
                     <a
                       href="# "
                       key={index}
-                      className="text-lg bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
+                      className="text-lg bg-gray-900 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
                     >
                       {index + 1}
                     </a>
@@ -83,7 +83,7 @@ const Services = () => {
                     <a
                       href="# "
                       key={index}
-                      className="text-lg bg-red-500 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
+                      className="text-lg bg-gray-900 dark:bg-yellow-500 w-10 aspect-square grid place-items-center text-white rounded-full transition-colors"
                     >
                       {index + 1}
                     </a>

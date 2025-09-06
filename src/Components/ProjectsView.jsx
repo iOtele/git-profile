@@ -32,7 +32,7 @@ const ProjectsView = () => {
             />
 
             <div className="w-full justify-center items-center flex flex-col gap-2">
-              <h3 className="text-2xl font-semibold mb-2 text-red-500 dark:text-yellow-500">
+              <h3 className="text-2xl font-semibold mb-2 text-gray-900 dark:text-yellow-500">
                 {project.title}
               </h3>
               <p className="text-gray-900 dark:text-white md:h-28 h-24 text-sm font-light overflow-y-auto custom-scrollbar pr-2 transition-colors duration-500">

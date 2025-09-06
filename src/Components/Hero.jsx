@@ -36,7 +36,7 @@ const Hero = () => {
     >
       <Navbar />
       <div className="  absolute flex top-[70px]  justify-center md:justify-start md:text-5xl text-3xl md:font-normal font-bolder md:pl-0 ">
-        <span className="flex overflow-hidden pl-2 pt-18   md:border-t-0 shadow-md shadow-red-300 dark:shadow-gray-200 rounded-md">
+        <span className="flex overflow-hidden pl-2 pt-18   md:border-t-0 shadow-md shadow-gray-700 dark:shadow-gray-200 rounded-md">
           {letters.map((letter, index) => (
             <span
               key={index}
@@ -97,19 +97,19 @@ const Hero = () => {
               isTextVisible ? "scale-x-100" : "scale-x-0"
             } transition-transform duration-300 custom-scrollbar`}
           >
-            <p className="xl:py-1 py-1 dark:text-gray-200 text-gray-900 [&::first-letter]:text-[30px] [&::first-letter]:ml-3 dark:[&::first-letter]:text-yellow-500  [&::first-letter]:text-red-500 transition-colors duration-300 ease-out ">
+            <p className="xl:py-1 py-1 dark:text-gray-200 text-gray-900 [&::first-letter]:text-[30px] [&::first-letter]:ml-3 dark:[&::first-letter]:text-yellow-500  [&::first-letter]:text-gray-700   transition-colors duration-300 ease-out ">
               {aboutText}
             </p>
           </div>
         </div>
       </div>
-      <div className="flex md:gap-5 gap-2 ml-auto absolute top-[70px] right-5 md:right-4  flex-col overflow-hidden px-2 py-2    border-gray-200  shadow-md shadow-red-300 dark:shadow-gray-200   rounded-md ">
+      <div className="flex md:gap-5 gap-2 ml-auto absolute top-[70px] right-5 md:right-4  flex-col overflow-hidden px-2 py-2    border-gray-200  shadow-md shadow-gray-300 dark:shadow-gray-200   rounded-md ">
         {socialIcons.map((icon, index) => (
           <a
             href={icon.href}
             target="_blank"
             key={index}
-            className="xl:text-3xl md:text-2xl text-xl dark:hover:text-white hover:text-gray-900 dark:hover:shadow-amber-200 hover:shadow-red-500 shadow transition-all duration-500 ease-in-out "
+            className="xl:text-3xl md:text-2xl text-xl dark:hover:text-white hover:text-gray-900 dark:hover:shadow-amber-200 hover:shadow-gray-500 shadow transition-all duration-500 ease-in-out "
           >
             <i className={icon.icon} />
           </a>

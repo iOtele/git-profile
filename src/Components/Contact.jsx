@@ -91,19 +91,14 @@ const Contact = () => {
             <textarea
               placeholder="Message"
               name="message"
-              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border-red-500 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 min-h-[100px] max-h-[200px] resize-y p-3 transition-colors duration-500"
+              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-o border border-gray-900 dark:border-yellow-500 placeholder-gray-600 dark:placeholder-yellow-500/50 min-h-[100px] max-h-[200px] resize-y p-3 transition-colors duration-500"
               id=""
               required
             />
-            {/* <input
-              type="Submit"
-              value="Stay Connected"
-              name="submit"
-              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500 "
-            /> */}
+
             <button
               type="submit"
-              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-0 bg-red-500 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
+              className="md:w-[400px] w-full h-13 pl-3 text-lg outline-0 bg-gray-900 dark:bg-yellow-500 text-white dark:text-gray-900 uppercase font-extrabold cursor-pointer tracking-wide shadow-md shadow-gray-700/20 transition-colors duration-500"
             >
               {loading ? "Sending..." : "Stay Connected"}
             </button>

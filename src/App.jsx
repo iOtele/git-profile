@@ -17,7 +17,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <ThemeProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-800 text-red-500 dark:text-yellow-500 transition-colors duration-700">
+        <div className="min-h-screen bg-white dark:bg-gray-800 text-gray-900 dark:text-yellow-500 transition-colors duration-700">
           <Loader isLoading={isLoading} />
           {!isLoading && (
             <Routes>
